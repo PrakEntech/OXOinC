@@ -22,6 +22,7 @@ int main()
     printf("   |   |   \n");
     while(y!='y'){
         printf("Do you want to continue(y/n) - ");scanf("%s",&y);
+        if(y!='y'){return 0;}
     }
     system("clear");
     for(i=0;i<9;i++){table[i]=' ';}table[i]='\0';
